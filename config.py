@@ -7,28 +7,28 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("7047834233"))
+API_HASH = getenv("0ef7db3bf8f66b685cbdbfd82829ae0b")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("7084198541:AAEWOES9tZz5hGiE_e01gDDAnc1cRWvoRqg")
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("mongodb+srv://Adarsh98:Adarsh@cluster0.rjnamra.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", None)
 
-DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 180))
+DURATION_LIMIT_MIN = int(getenv("180 minutes", 180))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", None))
+LOGGER_ID = int(getenv("-1002094446836", None))
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", "5712608345"))
+OWNER_ID = int(getenv("OWNER_ID", "7047834233"))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
-HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
+HEROKU_APP_NAME = getenv("aky music")
 # Get it from http://dashboard.heroku.com/account
-HEROKU_API_KEY = getenv("HEROKU_API_KEY")
+HEROKU_API_KEY = getenv("31b016f1-7f10-4c2c-a4aa-6782b068d51c")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO", "https://github.com/Learningbots79/LB_Music",
@@ -38,8 +38,8 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/+01Npc3a6nVYwYzU1")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+01Npc3a6nVYwYzU1")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/indian_best_english_chatting")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/indian_best_english_chatting")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -61,7 +61,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
 
 # Get your pyrogram v2 session from @StringFatherBot on Telegram
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("BQGiSPgALJsccYqqaJjqfLJi1cXkM_ndBI7bYFB_-HSZRfwnfVYtjHgwmgAnU1R0oo5Zd15HcM1T5OjQ4MQKQUDTWB2O70hlahqToO_j1ZlQ-ce6A6h7aSOMln29EP_B6MQRVCr4WZaOIiW872cdbH5tkE7uJXI4Q7OuNEN2QC5I_BnaabdmGb05nNimGLjIy2V0gOtmuHWPeIhHNGys-Ve4FnOs5WWdG3EvVQ71NYCwZA3wjQPVRAr1mAzfec26qszsqeF9RaJZZOuSFRQshE_OUtXoe8StPJTTSNgWN4LSspjjhBNtxcTzn74NlFd8oZAN549t-6DqMlUwSf42-EOS9T11SQAAAAGkFWp5AA", None)
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -77,7 +77,7 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://graph.org/file/6db32c63c677905cc5cc3.jpg"
+    "START_IMG_URL", "https://graph.org/file/7493a3d1bb12165a6f3b3.jpg"
 )
 PING_IMG_URL = getenv(
     "PING_IMG_URL", "https://graph.org/file/bc7f8903e60fbfafa2eb4.jpg"
@@ -99,7 +99,7 @@ def time_to_seconds(time):
     return sum(int(x) * 60**i for i, x in enumerate(reversed(stringt.split(":"))))
 
 
-DURATION_LIMIT = int(time_to_seconds(f"{DURATION_LIMIT_MIN}:00"))
+DURATION_LIMIT = int(time_to_seconds(f"{180MIN}:00"))
 
 
 if SUPPORT_CHANNEL:
